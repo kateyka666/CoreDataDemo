@@ -50,12 +50,13 @@ final class NewTaskViewController: UIViewController {
         return button
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        setupButtons()
         
+        setupButtons()
         setupViews([taskTextField, saveButton, cancelButton])
         setConstraints()
     }

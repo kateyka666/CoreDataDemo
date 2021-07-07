@@ -62,7 +62,7 @@
 			children = (
 				79354FCE2695A86500C0E1AE /* Views */,
 				79354FCB2694DF4E00C0E1AE /* Services */,
-				79354FCA2694DF3D00C0E1AE /* Frameforks */,
+				79354FCA2694DF3D00C0E1AE /* DataModel */,
 				79354FC92694DF2C00C0E1AE /* Controllers */,
 				79354FC72694DEE000C0E1AE /* Resources */,
 				79354FC62694DE8A00C0E1AE /* Supporting Files */,
@@ -97,12 +97,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		79354FCA2694DF3D00C0E1AE /* Frameforks */ = {
+		79354FCA2694DF3D00C0E1AE /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				3A3A84212693751A00A81686 /* CoreDataDemo.xcdatamodeld */,
 			);
-			path = Frameforks;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		79354FCB2694DF4E00C0E1AE /* Services */ = {
