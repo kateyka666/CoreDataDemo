@@ -87,12 +87,8 @@ final class TaskListViewController: UITableViewController {
             //            предаем значение текста в свойство тайтл в сущности сор даты
             task.title = alert.textFields?.first?.text
             if !task.title!.isEmpty{
-                do{
-                    //                сохраняем контекст если есть изменения
-                    try CoreDataManager.shared.persistentContainer.viewContext.save()
-                } catch let error {
-                    print(error)
-                }
+               CoreDataManager.shared.saveContext()
+              
                 //                обновляем табличку для отображение обновленных данных
                 self.tableView.reloadData()
             }
@@ -143,7 +139,7 @@ extension TaskListViewController {
             //            вызываем метод удаления из кор даты
             CoreDataManager.shared.delete(task: currentTask)
             //            получаем объекты из кор даты для отображения
-            fetchDataTasks()
+            tasks.remove(at: indexPath.row)
             //            удаляем ячейку по выбранному индекспасу
             tableView.deleteRows(at: [indexPath], with: .fade)
         }

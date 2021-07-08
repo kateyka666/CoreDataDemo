@@ -14,7 +14,7 @@ class CoreDataManager {
     private init() {}
     
     //        контейнер содержит весь стек кор даты приложения
-    lazy var persistentContainer: NSPersistentContainer = {
+    private lazy var persistentContainer: NSPersistentContainer = {
         
         let container = NSPersistentContainer(name: "CoreDataDemo")
         //        контейнер загрузает все сущности, которые есть
